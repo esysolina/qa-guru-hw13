@@ -22,8 +22,7 @@
 - ✓ Проверка выдачи авторов по названию в поиске.
 
 ##Сборка в Jenkins
-Ссылка на сборку 
-[http://www.screencapture.ru/file/988d6bd0]
+[Ссылка на сборку](http://www.screencapture.ru/file/988d6bd0)
 ###Параметры сборки в Jenkins:
 - browser (браузер, по умолчанию chrome)
 - browserVersion (версия браузера, по умолчанию 91.0)
@@ -50,11 +49,11 @@ test
 
 ##Allure отчет
 ###Основной отчет
-[http://www.screencapture.ru/file/7d5C7852]
+![Img1](http://www.screencapture.ru/file/7d5C7852)
 ###Тесты
-[http://www.screencapture.ru/file/A6fac683]
+![Img2](http://www.screencapture.ru/file/A6fac683)
 ###Графики
-[http://www.screencapture.ru/file/1E4aE9Ab]
+![Img3](http://www.screencapture.ru/file/1E4aE9Ab)
 ##Интеграция с Allure TestOps
 
 ##Интеграция с Jira
