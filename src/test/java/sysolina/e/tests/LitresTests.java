@@ -69,7 +69,7 @@ public class LitresTests extends TestBase {
 
     @Test
     @Description("Тест выдачи жанров в поиске")
-    @DisplayName("В логах страницы не должно быть ошибок")
+    @DisplayName("Проверка жанра в выдаче")
     void genreTest(String testData, String expectedResult) {
         step("Открыть 'https://www.litres.ru/'", () ->
                 open("https://www.litres.ru/"));
@@ -89,7 +89,7 @@ public class LitresTests extends TestBase {
 
     @Test
     @Description("Тест выдачи авторов по названию в поиске")
-    @DisplayName("В логах страницы не должно быть ошибок")
+    @DisplayName("Проверка автора по названию произведения")
     void nameTest(String testsData, String expectedResults) {
         step("Открыть 'https://www.litres.ru/'", () ->
                 open("https://www.litres.ru/"));
