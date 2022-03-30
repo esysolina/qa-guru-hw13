@@ -1,7 +1,7 @@
-#Проект по автоматизации тестрования сайта Litres
+# Проект по автоматизации тестрования сайта Litres
 Веб сайт
 
-##Содержание
+## :open_file_folder: Содержание
 - Технологии и инструменты
 - Реализованные проверки
 - Сборка в Jenkins
@@ -12,18 +12,18 @@
 - Отчет в Telegram
 - Видео примеры прохождения тестов
 
-##Технологии и инструменты
+## :rocket: Технологии и инструменты
 
-##Реализованные проверки :shipit:
+## :white_check_mark: Реализованные проверки
 - ✓ Проверка поисковой строки.
 - ✓ Проверка заголовка страницы.
 - ✓ Проверка отсутствия ошибок в консоли.
 - ✓ Проверка выдачи жанров в поиске.
 - ✓ Проверка выдачи авторов по названию в поиске.
 
-##Сборка в Jenkins
+## :chart_with_downwards_trend: Сборка в Jenkins
 [Ссылка на сборку](http://www.screencapture.ru/file/988d6bd0)
-###Параметры сборки в Jenkins:
+### Параметры сборки в Jenkins:
 - browser (браузер, по умолчанию chrome)
 - browserVersion (версия браузера, по умолчанию 91.0)
 - browserSize (размер окна браузера, по умолчанию 1920x1080)
@@ -32,7 +32,7 @@
 - videoStorage (адрес, по которому можно получить видео)
 - threads (количество потоков)
 
-##Запуск из терминала
+## :gear: Запуск из терминала
 Локальный запуск:
 >gradle clean test
 
@@ -47,17 +47,18 @@ test
 -DvideoStorage=https://${REMOTE_DRIVER_URL}/video/
 -Dthreads=${THREADS}
 
-##Allure отчет
-###Основной отчет
-![Img1](http://www.screencapture.ru/file/7d5C7852)
-###Тесты
-![Img2](http://www.screencapture.ru/file/A6fac683)
-###Графики
-![Img3](http://www.screencapture.ru/file/1E4aE9Ab)
-##Интеграция с Allure TestOps
+## :bar_chart: Allure отчет
+### Основной отчет
+![Img1](/images/mainreport.jpg)
+### Тесты
+![Img2](/images/tests.jpg)
+### Графики
+![Img3](/images/graph.jpg)
+## :page_with_curl: Интеграция с Allure TestOps
 
-##Интеграция с Jira
+## :pencil2: Интеграция с Jira
 
-##Отчет в Telegram
+## :love_letter: Отчет в Telegram
 ![t](/images/telegram.jpg)
-##Видео примеры прохождения тестов
+
+## :clapper: Видео примеры прохождения тестов
