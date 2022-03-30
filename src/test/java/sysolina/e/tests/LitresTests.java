@@ -44,8 +44,9 @@ public class LitresTests extends TestBase {
         step("Открыть 'https://www.litres.ru/'", () ->
                 open("https://www.litres.ru/"));
 
-        step("Заголовок страницы должен содержать текст 'ЛитРес – библиотека электронных книг, скачать в fb2 или читать онлайн на LitRes'", () -> {
-            String expectedTitle = "ЛитРес – библиотека электронных книг, скачать в fb2 или читать онлайн на LitRes";
+        step("Заголовок страницы должен содержать текст", () -> {
+            String expectedTitle = "ЛитРес – библиотека электронных и аудиокниг, " +
+                    "скачать в fb2 и mp3, читать и слушать онлайн на LitRes";
             String actualTitle = title();
 
             assertThat(actualTitle).isEqualTo(expectedTitle);
