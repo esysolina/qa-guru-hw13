@@ -1,5 +1,5 @@
 # Проект по автоматизации тестрования сайта Litres
-Веб сайт
+[Веб сайт](https://www.litres.ru/)
 
 ## :open_file_folder: Содержание
 - Технологии и инструменты
@@ -21,7 +21,7 @@
 <a href="https://gradle.org/"><img src="images/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>
 <a href="https://selenide.org/"><img src="images/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>
 <a href="https://aerokube.com/selenoid/"><img src="images/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
-<a href="https://github.com/allure-framework/allure2"><img src="images/Allure_Report.svg" width="50" height="50"  alt="Allure"/></a>
+<a href="https://github.com/allure-framework/allure2"><img src="images/Allure_EE.svg" width="50" height="50"  alt="Allure"/></a>
 <a href="https://www.jenkins.io/"><img src="images/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
 </p>
 
@@ -33,7 +33,7 @@
 - ✓ Проверка выдачи авторов по названию в поиске.
 
 ## :chart_with_downwards_trend: Сборка в Jenkins
-[Ссылка на сборку](http://www.screencapture.ru/file/988d6bd0)
+[Ссылка на сборку](https://jenkins.autotests.cloud/job/qa-quru-esysolina-13/5/)
 ### Параметры сборки в Jenkins:
 - browser (браузер, по умолчанию chrome)
 - browserVersion (версия браузера, по умолчанию 91.0)
@@ -45,14 +45,10 @@
 
 ## :gear: Запуск из терминала
 Локальный запуск:
-``
-gradle clean test
-``
-
+>gradle clean test
 
 Удаленный запуск:
-``
-clean
+>clean
 test
 -Dbrowser=${BROWSER}
 -DbrowserVersion=${BROWSER_VERSION}
@@ -61,7 +57,6 @@ test
 -DremoteDriverUrl=https://${LOGIN}:${PASSWORD}@${REMOTE_DRIVER_URL}/wd/hub/
 -DvideoStorage=https://${REMOTE_DRIVER_URL}/video/
 -Dthreads=${THREADS}
-``
 
 ## :bar_chart: Allure отчет
 ### Основной отчет
@@ -71,9 +66,12 @@ test
 ### Графики
 ![Img3](/images/graph.jpg)
 ## :page_with_curl: Интеграция с Allure TestOps
-
+### Дашборды
+![Img4](/images/ato_dash.jpg)
+### Тест-кейсы
+![Img5](/images/ato_cases.jpg)
 ## :pencil2: Интеграция с Jira
-![Img1](/images/jira.jpg)
+![Img6](/images/jira.jpg)
 ## :love_letter: Отчет в Telegram
 ![t](/images/telegram.jpg)
 
