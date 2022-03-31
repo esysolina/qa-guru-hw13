@@ -75,4 +75,7 @@ test
 ## :love_letter: Отчет в Telegram
 ![t](/images/telegram.jpg)
 
-## :clapper: Видео примеры прохождения тестов
+## :clapper: Видео пример прохождения тестов
+<p align="center">
+<img title="Selenoid Video" src="/images/video1.gif" width="250" height="153"  alt="video">
+</p>
