@@ -1,6 +1,7 @@
 package sysolina.e.tests;
 
 import com.codeborne.selenide.Condition;
+import org.junit.jupiter.api.BeforeEach;
 import sysolina.e.helpers.DriverUtils;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
@@ -13,13 +14,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 public class LitresTests extends TestBase {
+    @BeforeEach
+    static void beforeEach() {
+        step("Открыть 'https://www.litres.ru/'", () ->
+                open("https://www.litres.ru/"));
+    }
+
     @Test
     @Description("Тест поисковой строки")
     @DisplayName("Успешный поиск автора")
     void generatedTest() {
-        step("Открыть 'https://www.litres.ru/'", () ->
-                open("https://www.litres.ru/"));
-
         step("Ввести в поисковую строку 'Акунин'", () -> {
             $(".Search-module__input").setValue("Акунин");
         });
@@ -41,9 +45,6 @@ public class LitresTests extends TestBase {
     @Description("Тест заголовка")
     @DisplayName("Проверка заголовка на содержание текста")
     void titleTest() {
-        step("Открыть 'https://www.litres.ru/'", () ->
-                open("https://www.litres.ru/"));
-
         step("Заголовок страницы должен содержать текст", () -> {
             String expectedTitle = "ЛитРес – библиотека электронных и аудиокниг, " +
                     "скачать в fb2 и mp3, читать и слушать онлайн на LitRes";
@@ -57,9 +58,6 @@ public class LitresTests extends TestBase {
     @Description("Тест на ошибки в консоли")
     @DisplayName("В логах страницы не должно быть ошибок")
     void consoleShouldNotHaveErrorsTest() {
-        step("Открыть 'https://www.litres.ru/'", () ->
-                open("https://www.litres.ru/"));
-
         step("Console logs should not contain text 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
             String errorText = "SEVERE";
@@ -72,9 +70,6 @@ public class LitresTests extends TestBase {
     @Description("Тест выдачи жанров в поиске")
     @DisplayName("Проверка жанра в выдаче")
     void genreTest() {
-        step("Открыть 'https://www.litres.ru/'", () ->
-                open("https://www.litres.ru/"));
-
         step("Ввести в поисковую строку 'Цвейг'", () -> {
             $(".Search-module__input").setValue("Цвейг");
         });
@@ -92,9 +87,6 @@ public class LitresTests extends TestBase {
     @Description("Тест выдачи авторов по названию в поиске")
     @DisplayName("Проверка автора по названию произведения")
     void nameTest() {
-        step("Открыть 'https://www.litres.ru/'", () ->
-                open("https://www.litres.ru/"));
-
         step("Ввести в поисковую строку 'Сто лет одиночества'", () -> {
             $(".Search-module__input").setValue("Сто лет одиночества");
         });

@@ -60,11 +60,11 @@ test
 
 ## :bar_chart: Allure отчет
 ### Основной отчет
-![Img1](/images/mainreport.jpg)
+![Img1](/images/mainreport2.jpg)
 ### Тесты
-![Img2](/images/tests.jpg)
+![Img2](/images/tests2.jpg)
 ### Графики
-![Img3](/images/graph.jpg)
+![Img3](/images/graph2.jpg)
 ## :page_with_curl: Интеграция с Allure TestOps
 ### Дашборды
 ![Img4](/images/ato_dash.jpg)
@@ -73,9 +73,9 @@ test
 ## :pencil2: Интеграция с Jira
 ![Img6](/images/jira.jpg)
 ## :love_letter: Отчет в Telegram
-![t](/images/telegram.jpg)
+![t](/images/telegram2.jpg)
 
 ## :clapper: Видео пример прохождения тестов
 <p align="center">
-<img title="Selenoid Video" src="/images/video1.gif" width="250" height="153"  alt="video">
+<img title="Selenoid Video" src="/images/video1.gif" width="750" height="440"  alt="video">
 </p>
