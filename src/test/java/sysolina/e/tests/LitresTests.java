@@ -15,7 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class LitresTests extends TestBase {
     @BeforeEach
-    static void beforeEach() {
+    public void beforeEach() {
         step("Открыть 'https://www.litres.ru/'", () ->
                 open("https://www.litres.ru/"));
     }
