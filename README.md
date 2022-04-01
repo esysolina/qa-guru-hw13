@@ -66,7 +66,7 @@ test
 ### Тесты
 ![Img2](/images/tests2.jpg)
 ### Графики
-![Img3](/images/graph2.jpg)
+![Img3](/images/graphs2.jpg)
 ## :page_with_curl: Интеграция с Allure TestOps
 ### Дашборды
 ![Img4](/images/ato_dash.jpg)
